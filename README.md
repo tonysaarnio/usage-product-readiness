@@ -73,17 +73,17 @@ requirement is the Salesforce **`sf`** CLI, authenticated to your org(s).
 **As a command (recommended):**
 
 ```bash
-pipx install git+https://<your-host>/usage-product-readiness.git
+pipx install git+https://github.com/tonysaarnio/usage-product-readiness.git
 # or, from a clone:
 pipx install .
 # or with uv:
-uv tool install .
+uv tool install git+https://github.com/tonysaarnio/usage-product-readiness.git
 ```
 
 **Zero-install (clone & run):**
 
 ```bash
-git clone https://<your-host>/usage-product-readiness.git
+git clone https://github.com/tonysaarnio/usage-product-readiness.git
 cd usage-product-readiness
 python -m usage_product_readiness product --org <alias> --product-code <code>
 ```
